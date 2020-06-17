@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel= "stylesheet" href= https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+
+        <title>HTML Website</title>
+    </head>
+    <body>
+        <section id="navbar">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <i class="fa fa-phone"> 000 123 456</i>
+                            </div>
+                            <div class="col-md-6 col2">
+                                <p>We are part of Lorem Ipsum Dolor Sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="fa fa-user"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </section>
+        <img src="images/midLogo.PNG" class="mid-logo">
+
+        <section id="carousel-section">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides">
+                    
+                    <img src="images/slider-1.jpg" style="width:100%">
+                
+                </div>
+            
+                <div class="mySlides">
+                    
+                    <img src="images/slider-2.jpg" style="width:100%">
+                
+                </div>
+            
+                
+            
+                <!-- Next and previous buttons -->
+                
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        
+                        slides[slideIndex-1].style.display = "block";
+                        
+                    }
+                </script>
+
+                <br>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="item a"><img src="images/logo-1.jpg" ></div>
+                        <div class="item b"><img src="images/logo-2.jpg"></div>
+                        <div class="item c"><img src="images/logo-3.jpg"></div>
+                        <div class="item d"><img src="images/logo-4.jpg"></div>
+                        <div class="item e"><img src="images/logo-5.jpg" ></div>
+                        <div class="item f"><img src="images/logo-6.jpg"></div>
+                    </div>
+                    <script>
+                        var carousel = $(".carousel"),
+                            currdeg  = 0;
+
+                        $(".next").on("click", { d: "n" }, rotate);
+                        $(".prev").on("click", { d: "p" }, rotate);
+
+                        function rotate(e){
+                            if(e.data.d=="n"){
+                                currdeg = currdeg - 60;
+                            }
+                            if(e.data.d=="p"){
+                                currdeg = currdeg + 60;
+                            }
+                            carousel.css({
+                                "-webkit-transform": "rotateY("+currdeg+"deg)",
+                                "-moz-transform": "rotateY("+currdeg+"deg)",
+                                "-o-transform": "rotateY("+currdeg+"deg)",
+                                "transform": "rotateY("+currdeg+"deg)"
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        
+        <!--About-->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="about-us">About Us</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud.
+                        </p>
+                        <h4 class="part">We Are A Part Of</h4>
+                        <img src="images/part.PNG" class="part-img" >
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/phone1.png" class="phone" type="button" data-container="body" data-toggle="popover" data-placement="top" data-content="Call Us +000 123 456">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        
+        <!--Calculator Section-->
+        <section id="calculation">
+            <h2 class="calculate">Calculate Your Insurance Premium</h2>
+            <div class="container cal-cont">
+                <div class='row'>
+                    <div class=" col-md-3">
+                        <input type="text" class="form-control"  id="Value1" placeholder="Value 1">
+                    </div>
+                    <div class=" col-md-3">
+                      <input type="text" class="form-control"  id="Value2" placeholder="Value 2">
+                    </div>
+                    <div class=" col-md-3">
+                        <input type="submit" class="form-control"  id="Calculate" onclick="myFunction()" placeholder="Calculate">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--Call Consultation section-->
+        <section>
+            <h2 class="call">Call Consultation</h2>
+            <p class="call-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="container call-container">
+                <div class="row">
+                    <div class="col-md-4 col1">
+                        <input type="text" class="form-control"  id="inputEmail4" placeholder="Name">
+                    </div>
+                    <div class="col-md-4 col2">
+                        <input type="text" class="form-control"  id="inputPassword4" placeholder="Email">
+                    </div>
+                    <div class="col-md-4 col3">
+                        <input type="text" class="form-control"  id="Contact" placeholder="Contact">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+              <textarea class="form-control mt-2 p-20" id="exampleFormControlTextarea1" rows="8"  placeholder='Message'></textarea>
+            </div>
+            <div class='d-flex text-center justify-content-center outline'>
+                <a class="form-control  d-inline news col-2 mt-1 " href="#" role="button">Submit</a>
+                
+                <button type="submit" class="btn btn-dark d-inline news">></button>
+             
+            </div>
+        </section>
+
+        <!--News Letter-->
+        <section  id="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="subscribe">Subscribe For Newsletter</h2>
+                    </div>
+                    <div class="col-md-6 news1">
+                        <input type="text" class="form-control d-inline news col-4 mt-1 "  id="inputEmail4" placeholder="Email Address">
+                        <button type="submit" class="btn btn-dark d-inline news">></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer1">
+            <footer class="col-12 row  aboutus">
+                <div class='col-3'>
+                    <h3>Company Address</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus praesentium eveniet illo voluptas ad alias, ipsum, facere totam quo maxime saepe qui ut quis eum placeat quod sint consectetur. Commodi!</p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet, conmnis dolorione veniam optio autem ad.
+        
+                    </p>
+                 </div>
+        
+                <div class='col-3'>
+                    <h3> Navigation</h3>
+                    
+                        Home<br>
+                        About us<br>
+                        Insurers<br>
+                        Claim<br>
+                        Free Qoute<br>
+                        Contact us<br>
+                        Blog<br>
+                    
+                </div>
+        
+                <div class='col-2'>
+                    <h3> Insurance Types</h3>
+                    
+                        Home<br>
+                        About us<br>
+                        Insurers<br>
+                        Claim<br>
+                        Free Qoute<br>
+                        Contact us<br>
+                        Blog<br>
+                </div>
+        
+                <div class='col-4'>
+                    <h3>Contact Details</h3>
+                    <span class="material-icons icon2">call</span> <span class='icon2 mt-0'>0334-1895266</span>
+                    <br>
+                    <span class="material-icons icon2">
+                        email
+                    </span><span class='icon2 mt-0'>xwy@insurance.com.uk</span>
+                    <br>
+                   
+                    <h3>Follow us on Social media</h3>
+                    <img src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png"/>
+                    <img src="https://img.icons8.com/android/24/000000/twitter.png"/>
+                    <img src="https://img.icons8.com/windows/32/000000/google-plus-squared.png"/>
+                </div>
+            </footer>
+        </div>
+    
+        
+      
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();   
+            });
+        </script>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("Value1").value;
+              var y = document.getElementById("Value2").value;
+              x=parseInt(x)
+              y=parseInt(y)
+              var z = x + y;
+              $('.carousel').CircularCarousel(options);
+              document.getElementById("SubmitmyFunc").value = z;
+            }
+        </script>
+
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                
+    </body>
+</html>

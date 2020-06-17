@@ -1,0 +1,276 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+#navbar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar
+{
+    background-image: linear-gradient(to right,#000080,#000080);
+}
+
+.navbar-brand
+{
+    font-size: 10px;
+    font-weight: 400;
+    
+}
+.navbar-brand .col-md-6
+{
+    color: white;
+    padding-left: 80px;
+    margin-bottom: -30px;
+    margin-top: -20px;
+} 
+.navbar-brand .col2 
+{
+    padding-left: 200px;
+    
+    
+}
+
+.fa
+{
+    color: white;
+}
+.mid-logo
+{
+    margin: 0 38%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.navbar-nav
+{
+    margin-right: 50px;
+}
+
+/* Slideshow section */
+#carousel-section 
+{
+  width: 100%;
+  position: absolute;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.carousel-container {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+.item {
+
+    margin-top: 30px;
+    position: absolute;
+    text-align: center;
+    
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(250px);
+    
+  }
+  .b {
+    transform: rotateY(60deg) translateZ(250px);
+    
+  }
+  .c {
+    transform: rotateY(120deg) translateZ(250px);
+    
+  }
+  .d {
+    transform: rotateY(180deg) translateZ(250px);
+    
+  }
+  .e {
+    transform: rotateY(240deg) translateZ(250px);
+    
+  } 
+  .f {
+    transform: rotateY(300deg) translateZ(250px);
+    
+  }
+  
+#about
+{
+    margin-top: 800px;
+    padding-top: 25px;
+    background-color: #f2f2f2;
+}
+.about-us
+{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.part
+{
+    font-weight: bolder;   
+}
+.part-img
+{
+    width: 400px;
+    margin-left: -15px;
+    margin-bottom: 40px;
+}
+
+.phone
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+#calculation
+{
+    
+    background-image: linear-gradient(to right, #0099ff, #0099ff);
+
+}
+.calculate
+{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+
+}
+.cal-cont{
+    padding-bottom: 30px;
+    margin-left: 100px;
+}
+
+.call
+{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.call-sub
+{
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.call-container
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+.col1{
+    margin-right: -20px;
+}
+.col3{
+    margin-left: -20px;
+}
+
+.mb-3 .mt-2
+{
+    width: 69%;
+    
+    margin-left: 222px;
+}
+
+#newsletter
+{
+    background-image: linear-gradient(to right, #0099ff, #0099ff);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.subscribe
+{
+    color: white;
+
+}
+.d-flex
+{
+    margin-bottom: 30px;
+}
+.d-flex .btn
+{
+    display: inline!important;
+    border-radius: 0;
+    height: 14%;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+}
+.news1 .email1
+{
+    width: 50px;
+}
+
+.footer1
+{
+    padding-top: 20px;
+    padding-left: 40px;
+}
